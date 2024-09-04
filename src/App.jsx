@@ -56,7 +56,7 @@ function App() {
         onClick={updateFeedback}
         onReset={resetFeedback}
       />
-      {totalFeedback ? (
+      {totalFeedback > 0 ? (
         <Feedback
           positive={positivFeedbacks}
           total={totalFeedback}
