@@ -39,7 +39,7 @@ function App() {
   // Процент позитивных отзывов
   const positivFeedbacks =
     totalFeedback - feedback.neutral > 0
-      ? Math.round((feedback.good / (totalFeedback - feedback.neutral)) * 100)
+      ? Math.round((feedback.good / totalFeedback) * 100)
       : 0
 
   //Рендер компонентов в App
