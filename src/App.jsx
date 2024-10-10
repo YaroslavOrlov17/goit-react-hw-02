@@ -28,12 +28,7 @@ function App() {
 
   // Сброс всех категорий на ноль
   const resetFeedback = () => {
-    const resetFeedbackObject = {}
-    for (let key in feedback) {
-      resetFeedbackObject[key] = 0
-    }
-
-    setFeedback(resetFeedbackObject)
+    setFeedback({ good: 0, neutral: 0, bad: 0 })
   }
 
   //Сохранение в локакльное хранилище
